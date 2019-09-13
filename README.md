@@ -1,15 +1,15 @@
-## STEP FOR EXECUTION
->**BUILDING A FUNCTION**
+## STEP FOR EXECUTION COMMANDS
+>**BUILD A FUNCTION**
 
 	faas-cli new --lang java8 apifun
 
->**PUSHING THE FUNCTION INTO LOCAL REPOSITORY**
+>**PUSH THE FUNCTION INTO LOCAL REPOSITORY**
 
 	docker tag apifun aditik/apifun
 
 	docker push aditik/apifun
    
->**DEPLOYING A FUNCTION USING API**
+>**DEPLOY A FUNCTION USING Swagger API**
 
     {
 
@@ -37,7 +37,7 @@
 
     }
     
->**OUTPUT**
+>**OUTPUT OR LOGS**
 
 Name:           apifun-55cd77f8d5-fnps5
 
