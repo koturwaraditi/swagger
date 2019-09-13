@@ -10,36 +10,60 @@ docker tag apifun aditik/apifun
 >**DEPLOYING A FUNCTION USING API**
 
 >{
+
 > "service": "apifun",
+
 >  "image": "aditik/apifun",
+
 >  "envProcess": "function",
+
 >  "envVars": { "write_debug": "true"},
+
 >  "constraints": [],
+
 >  "labels": {},
+
 >  "registryAuth":"YWRpdGlrOmFkaXRpLmtAMTIz==",
+
 > "annotations": {"prometheus.io.scrape": "false"},
+
 >  "secrets": [],
+
 > "limits": {},
+
 >  "requests": {}
+
 >}
 
 >**OUTPUT**
 
-Name:           apifun-55cd77f8d5-fnps5
-Namespace:      openfaas-fn
-Priority:       0
-Node:           geekbull-sve15118fnb/192.168.0.135
-Start Time:     Fri, 13 Sep 2019 12:58:38 +0530
-Labels:         faas_function=apifun
+>Name:           apifun-55cd77f8d5-fnps5
+
+>Namespace:      openfaas-fn
+
+>Priority:       0
+
+>Node:           geekbull-sve15118fnb/192.168.0.135
+
+>Start Time:     Fri, 13 Sep 2019 12:58:38 +0530
+
+>Labels:         faas_function=apifun
                 pod-template-hash=55cd77f8d5
-Annotations:    prometheus.io.scrape: false
-Status:         Running
-IP:             10.244.0.18
-Controlled By:  ReplicaSet/apifun-55cd77f8d5
-Containers:
-  apifun:
-    Container ID:   docker://8cc5462592f5746a049be727e055723ff59d7ec60fc36ba978c733b84630f642
-    Image:          aditik/apifun
+>Annotations:    prometheus.io.scrape: false
+
+>Status:         Running
+
+>IP:             10.244.0.18
+
+>Controlled By:  ReplicaSet/apifun-55cd77f8d5
+
+>Containers:
+  
+  >apifun:
+    
+    >Container ID:   docker://8cc5462592f5746a049be727e055723ff59d7ec60fc36ba978c733b84630f642
+    
+    >Image:          aditik/apifun
     Image ID:       docker-pullable://aditik/apifun@sha256:490db5341d2bec1196b49a357500c2c2df47a4d161ddb5e13ade360ff1c2824c
     Port:           8080/TCP
     Host Port:      0/TCP
