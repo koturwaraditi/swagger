@@ -7,21 +7,24 @@ faas-cli new --lang java8 apifun
 
 docker tag apifun aditik/apifun
 
-**DEPLOYING A FUNCTION USING API**
-{
- "service": "apifun",
-  "image": "aditik/apifun",
-  "envProcess": "function",
-  "envVars": { "write_debug": "true"},
-  "constraints": [],
-  "labels": {},
-  "registryAuth":"YWRpdGlrOmFkaXRpLmtAMTIz==",
- "annotations": {"prometheus.io.scrape": "false"},
-  "secrets": [],
-  "limits": {},
-  "requests": {}
-}
-**OUTPUT**
+>**DEPLOYING A FUNCTION USING API**
+
+>{
+> "service": "apifun",
+>  "image": "aditik/apifun",
+>  "envProcess": "function",
+>  "envVars": { "write_debug": "true"},
+>  "constraints": [],
+>  "labels": {},
+>  "registryAuth":"YWRpdGlrOmFkaXRpLmtAMTIz==",
+> "annotations": {"prometheus.io.scrape": "false"},
+>  "secrets": [],
+> "limits": {},
+>  "requests": {}
+>}
+
+>**OUTPUT**
+
 Name:           apifun-55cd77f8d5-fnps5
 Namespace:      openfaas-fn
 Priority:       0
