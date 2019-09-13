@@ -1,0 +1,13 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://192.168.0.135:31112
+functions:
+  apifun:
+    lang: java8
+    handler: ./apifun
+    image: apifun:latest
+    environment:
+        read_timeout: 20s
+        write_timeout: 20s
+
