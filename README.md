@@ -1,11 +1,11 @@
 **STEP FOR EXECUTION**
 >**BUILDING A FUNCTION**
 
-faas-cli new --lang java8 apifun
+  faas-cli new --lang java8 apifun
 
 >**PUSHING THE FUNCTION INTO LOCAL REPOSITORY**
 
-docker tag apifun aditik/apifun
+  docker tag apifun aditik/apifun
 
 >**DEPLOYING A FUNCTION USING API**
 
